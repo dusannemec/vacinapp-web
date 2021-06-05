@@ -50,7 +50,7 @@ function CadastroVacina(props) {
       // * verifica se o usuário está logado para poder accesar a página de tabelas
       return tokenValidation(token).then((status) => {
         if (status === 403) {
-          history.push("/");
+          history.push("/vacinapp-web");
         }
       });
     };
@@ -291,7 +291,7 @@ function CadastroVacina(props) {
                 setIsLoading(true);
                 await enviaRegistro(doenca, fabricante, dose, lote, quantidade, prazoMaximoEntreDoses, tempoTotalProtecao);
                 setIsLoading(false);
-                history.push("/vacinas");
+                history.push("/vacinapp-web/vacinas");
               }}><p className="reset-a">Cadastrar Vacina</p></Button>
             </form>
           </ThemeProvider>

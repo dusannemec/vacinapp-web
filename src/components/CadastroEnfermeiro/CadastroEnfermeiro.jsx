@@ -49,7 +49,7 @@ function CadastroEnfermeiro(props) {
       // * verifica se o usuário está logado para poder accesar a página de tabelas
       return tokenValidation(token).then((status) => {
         if (status === 403) {
-          history.push("/");
+          history.push("/vacinapp-web");
         }
       });
     };
@@ -288,7 +288,7 @@ function CadastroEnfermeiro(props) {
                 setIsLoading(true);
                 await enviaRegistro(nome, email, coren, senha, admin);
                 setIsLoading(false);
-                history.push("/enfermeiros");
+                history.push("/vacinapp-web/enfermeiros");
               }}><p className="reset-a">Cadastrar Enfermeiro</p></Button>
             </form>
           </ThemeProvider>

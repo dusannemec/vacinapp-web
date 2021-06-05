@@ -47,7 +47,7 @@ function Login(props) {
     const accessAllowed = () => {
       return tokenValidation(token).then(status => {
         setIsLoading(false);
-        if (status === 200) history.push("/pacientes");
+        if (status === 200) history.push("/vacinapp-web/pacientes");
       })
     }
     accessAllowed();
@@ -62,7 +62,7 @@ function Login(props) {
       setIsLoading(false);
       console.log(data);
       setToken(data.accessToken);
-      history.push('/pacientes');
+      history.push('/vacinapp-web/pacientes');
     }).catch(err => {
       setIsLoading(false);
       setErro(true);

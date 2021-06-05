@@ -185,7 +185,7 @@ function Table({ tabela }) {
       if (tabela !== "pacientes") {
         return (
           <Tooltip title="Adicionar">
-            <Link to={`/${tabela}/cadastrar`}>
+            <Link to={`/vacinapp-web/${tabela}/cadastrar`}>
               <IconButton>
                 <AddIcon />
               </IconButton>

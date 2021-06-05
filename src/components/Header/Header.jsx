@@ -32,22 +32,22 @@ function Header({ alteraTabela }) {
           <nav className="navbar">
             <ul>
               <li>
-                <Link to="/vacinacao/cadastrar">
+                <Link to="/vacinapp-web/vacinacao/cadastrar">
                   <button className="item">Vacinar</button>
                 </Link>
               </li>
               <li>
-                <Link to="/pacientes">
+                <Link to="/vacinapp-web/pacientes">
                   <button className="item">Pacientes</button>
                 </Link>
               </li>
               <li>
-                <Link to="/enfermeiros">
+                <Link to="/vacinapp-web/enfermeiros">
                   <button className="item">Enfermeiros(as)</button>
                 </Link>
               </li>
               <li>
-                <Link to="/vacinas">
+                <Link to="/vacinapp-web/vacinas">
                   <button className="item">Vacinas</button>
                 </Link>
               </li>

@@ -55,7 +55,7 @@ function CadastroVacinacao(props) {
     const accessAllowed = () => {
       return tokenValidation(token).then(status => {
         if (status === 403) {
-          history.push('/');
+          history.push('/vacinapp-web');
         }
       })
     }

@@ -18,25 +18,25 @@ function App() {
         <StoreProvider>
           <Header/>
           <Switch>
-            <Route exact path="/">
+            <Route exact path="/vacinapp-web/">
               <Login />
             </Route>
-            <Route exact path="/pacientes">
+            <Route exact path="/vacinapp-web/pacientes">
               <Table tabela="pacientes" />
             </Route>
-            <Route exact path="/enfermeiros">
+            <Route exact path="/vacinapp-web/enfermeiros">
               <Table tabela="enfermeiros" />
             </Route>
-            <Route path="/enfermeiros/cadastrar">
+            <Route path="/vacinapp-web/enfermeiros/cadastrar">
               <CadastroEnfermeiro />
             </Route>
-            <Route exact path="/vacinas">
+            <Route exact path="/vacinapp-web/vacinas">
               <Table tabela="vacinas"/>
             </Route>
-            <Route path="/vacinas/cadastrar">
+            <Route path="/vacinapp-web/vacinas/cadastrar">
               <CadastroVacina />
             </Route>
-            <Route path="/vacinacao/cadastrar">
+            <Route path="/vacinapp-web/vacinacao/cadastrar">
               <CadastroVacinacao />
             </Route>
             <Route path="*">
