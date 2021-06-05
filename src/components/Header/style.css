@@ -1,0 +1,42 @@
+.container {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: var(--fundo);
+  padding: 50px 70px;
+  align-items: center;
+}
+
+.page-header, .navbar, .item {
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+  color: var(--texto);
+}
+
+.page-header {
+  font-size: 4em;
+  font-weight: bold;
+}
+
+.navbar ul {
+  display: flex;
+  flex-direction: row;
+}
+
+.item {
+  font-size: 2em;
+  text-decoration: none;
+  padding: 5px 8px;
+  border-radius: 5px;
+  border: none;
+  background: none;
+  margin-left: 2px;
+}
+
+.item:hover {
+  background-color: var(--hover);
+}
+
+.item:active {
+  background-color: var(--ativo);
+}
